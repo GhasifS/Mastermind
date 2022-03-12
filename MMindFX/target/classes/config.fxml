@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="400.0" style="-fx-background-color: #AAAAAA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wit.comp1050.Controller">
+   <children>
+      <HBox fx:id="win_box" layoutX="25.0" layoutY="7.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="20.0">
+         <children>
+            <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" translateX="30.0" />
+            <Circle fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" translateX="60.0" />
+            <Circle fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" translateX="90.0" />
+            <Circle fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" translateX="120.0" />
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="683.0" layoutX="25.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" translateY="62.0" width="350.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2c99ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <VBox layoutX="25.0" layoutY="25.0" prefHeight="675.0" prefWidth="350.0" translateY="70.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="350.0">
+               <children>
+                  <HBox fx:id="guess_box19" layoutX="10.0" layoutY="426.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="-8.0">
+                     <children>
+                        <Circle fx:id="guess_19" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_29" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_39" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_49" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_19" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_29" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_39" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_49" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box18" layoutX="10.0" layoutY="374.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <Circle fx:id="guess_18" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_28" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_38" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_48" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_18" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_28" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_38" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_48" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box17" layoutX="10.0" layoutY="322.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="10.0">
+                     <children>
+                        <Circle fx:id="guess_17" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_27" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_37" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_47" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_17" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_27" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_37" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_47" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box16" layoutX="10.0" layoutY="270.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="20.0">
+                     <children>
+                        <Circle fx:id="guess_16" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_26" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_36" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_46" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_16" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_26" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_36" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_46" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box15" layoutX="10.0" layoutY="218.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="30.0">
+                     <children>
+                        <Circle fx:id="guess_15" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_25" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_35" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_45" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_15" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_25" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_35" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_45" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box14" layoutX="10.0" layoutY="114.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="40.0">
+                     <children>
+                        <Circle fx:id="guess_14" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_24" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_34" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_44" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_14" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_24" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_34" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_44" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box13" layoutX="10.0" layoutY="114.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="50.0">
+                     <children>
+                        <Circle fx:id="guess_13" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_23" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_33" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_43" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_13" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_23" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_33" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_43" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box12" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="60.0">
+                     <children>
+                        <Circle fx:id="guess_12" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_22" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_32" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_42" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_12" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_22" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_32" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_42" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box11" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="70.0">
+                     <children>
+                        <Circle fx:id="guess_11" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_21" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_31" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_41" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_11" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_21" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_31" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_41" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="guess_box1" prefHeight="50.0" prefWidth="350.0" style="-fx-border-color: #000000;" translateY="80.0">
+                     <children>
+                        <Circle fx:id="guess_1" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="15.0" />
+                        <Circle fx:id="guess_2" fill="WHITE" layoutX="35.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="30.0" />
+                        <Circle fx:id="guess_3" fill="WHITE" layoutX="85.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="45.0" />
+                        <Circle fx:id="guess_4" fill="WHITE" layoutX="136.0" layoutY="35.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5;" translateX="60.0" />
+                        <HBox prefHeight="51.0" prefWidth="46.0" style="-fx-border-color: #000000;" translateX="75.0">
+                           <children>
+                              <Circle fx:id="check_1" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="6.0" translateY="8.0" />
+                              <Circle fx:id="check_2" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="18.0" translateY="8.0" />
+                              <Circle fx:id="check_3" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-14.0" translateY="30.0" />
+                              <Circle fx:id="check_4" fill="#ffffff00" radius="5.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" style="-fx-stroke-dash-array: 2;" translateX="-2.0" translateY="30.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox fx:id="button_box" prefHeight="75.0" prefWidth="350.0">
+               <children>
+                  <Button fx:id="red_b" mnemonicParsing="false" onAction="#redClicked" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #FF0000;" translateX="10.0" translateY="15.0" />
+                  <Button fx:id="ora_b" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#oraClicked" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #ffa500;" translateX="20.0" translateY="15.0" />
+                  <Button fx:id="yel_b" layoutX="60.0" layoutY="10.0" mnemonicParsing="false" onAction="#yelClicked" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #FFFF00;" translateX="30.0" translateY="15.0" />
+                  <Button fx:id="gre_b" layoutX="111.0" layoutY="10.0" mnemonicParsing="false" onAction="#greClicked" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #008000;" translateX="80.0" translateY="15.0" />
+                  <Button fx:id="blu_b" layoutX="161.0" layoutY="10.0" mnemonicParsing="false" onAction="#bluClicked" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #0000FF;" translateX="90.0" translateY="15.0" />
+                  <Button fx:id="pur_b" layoutX="212.0" layoutY="10.0" mnemonicParsing="false" onAction="#purClicked" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 20; -fx-background-color: #800080;" translateX="100.0" translateY="15.0" />
+                  <Button fx:id="tra_b" layoutX="262.0" layoutY="10.0" mnemonicParsing="false" onAction="#traClicked" prefHeight="40.0" prefWidth="40.0" style="-fx-border-radius: 20; -fx-background-color: transparent; -fx-border-color: black;" translateX="-85.0" translateY="15.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="checkcode_button" layoutX="150.0" layoutY="761.0" mnemonicParsing="false" onAction="#checkcodeClicked" prefHeight="15.0" prefWidth="100.0" text="CHECK CODE" textAlignment="CENTER" translateY="10.0" />
+      <Button fx:id="del_key" layoutX="370.0" layoutY="697.0" mnemonicParsing="false" onAction="#del_Clicked" text="DEL" translateX="-80.0" translateY="75.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <MenuBar fx:id="mainMenuBar" prefHeight="26.0" prefWidth="400.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#configApp" text="Configure" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#resetDefault" text="Reset Default" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#resetApp" text="Restart" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeApp" text="Exit" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="VIew">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showSol" text="Solution" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox fx:id="triangle" layoutX="10.0" layoutY="660.0" prefHeight="21.0" prefWidth="22.0">
+         <children>
+            <Polygon points="-50.0, 10.0, -28.0, 0.0, -50.0, -11.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+      <HBox fx:id="text_box" layoutX="30.0" layoutY="772.0" prefHeight="25.0" prefWidth="120.0">
+         <children>
+            <Text fx:id="time_text" strokeType="OUTSIDE" strokeWidth="0.0" text="455" wrappingWidth="117.13671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</Pane>

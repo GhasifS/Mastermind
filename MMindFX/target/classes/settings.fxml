@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wit.comp1050.settingController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="400.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2c99ff" />
+                  <Stop color="#2c99ff" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <VBox layoutX="100.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Max Guesses     ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="guess_choice" prefWidth="128.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time Limit         ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="time_choice" prefWidth="128.0" />
+               </children>
+            </HBox>
+            <CheckBox fx:id="dupe_check" mnemonicParsing="false" text="Duplicates">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="blank_check" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Blanks">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="sound_check" layoutX="10.0" layoutY="27.0" mnemonicParsing="false" prefWidth="272.0" text="Sound">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </VBox>
+      <Button layoutX="168.0" layoutY="314.0" mnemonicParsing="false" onAction="#applySettings" text="Go" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</Pane>
